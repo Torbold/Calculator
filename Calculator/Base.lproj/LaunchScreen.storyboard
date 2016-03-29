@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="uxU-He-l3H">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchground" translatesAutoresizingMaskIntoConstraints="NO" id="jRe-mc-2fY">
+                                <rect key="frame" x="0.0" y="465" width="600" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jRe-mc-2fY" secondAttribute="height" multiplier="566:127" id="jwx-f1-WMi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Calc" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-xu-hqR">
+                                <rect key="frame" x="140" y="40" width="320" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Xsv-pO-SrN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="robot" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-b3-rCR">
+                                <rect key="frame" x="180" y="181" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="3Yw-52-p3m"/>
+                                    <constraint firstAttribute="width" constant="240" id="EJv-se-2iX"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uxU-He-l3H" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="0Gc-Xe-opi"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="jRe-mc-2fY" secondAttribute="bottom" id="1rr-ND-MKu"/>
+                            <constraint firstItem="6Mw-xu-hqR" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="20" id="2bc-Uu-FS3"/>
+                            <constraint firstItem="f3u-b3-rCR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="A5B-O8-eUT"/>
+                            <constraint firstItem="6Mw-xu-hqR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="DoE-Ez-0iO"/>
+                            <constraint firstAttribute="trailing" secondItem="uxU-He-l3H" secondAttribute="trailing" id="M6s-r0-86p"/>
+                            <constraint firstItem="f3u-b3-rCR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O8X-sW-cSg"/>
+                            <constraint firstItem="uxU-He-l3H" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ont-Xt-bDZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jRe-mc-2fY" secondAttribute="trailing" id="U1S-bI-TKy"/>
+                            <constraint firstItem="f3u-b3-rCR" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xzl-30-hbD"/>
+                            <constraint firstItem="jRe-mc-2fY" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="rzV-gY-gru"/>
+                            <constraint firstItem="f3u-b3-rCR" firstAttribute="top" secondItem="6Mw-xu-hqR" secondAttribute="bottom" constant="30" id="vTi-Yd-W1f"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="uxU-He-l3H" secondAttribute="bottom" id="xep-xa-vjM"/>
+                            <constraint firstItem="uxU-He-l3H" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="z5n-zN-tiw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0Gc-Xe-opi"/>
+                                <exclude reference="O8X-sW-cSg"/>
+                                <exclude reference="Xzl-30-hbD"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="59" y="307"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Retro-Calc" width="755" height="111"/>
+        <image name="launchbg" width="1433" height="957"/>
+        <image name="launchground" width="999" height="225"/>
+        <image name="robot" width="786" height="402"/>
+    </resources>
 </document>
